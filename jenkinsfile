@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+      stage("gitcheckout"){
+        steps{
+            git credentialsId: 'github', url: 'https://github.com/pavankumarkr/BAREREPO1.git'
+        }
+      }
+    }
+}
